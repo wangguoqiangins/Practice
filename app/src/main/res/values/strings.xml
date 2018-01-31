@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Practice</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_map_test">MapTest</string>
+    <string name="title_activity_sqlit">SqlitAct</string>
+    <string name="title_activity_mount_list_type">MountListTypeAct</string>
+    <string name="title_activity_touch_test">TouchTestAct</string>
+    <string name="title_activity_video">VideoAct</string>
+    <string name="title_activity_base">BaseAct</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_anim">AnimAct</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_mvc__test_1">Mvc_Test_1</string>
+</resources>

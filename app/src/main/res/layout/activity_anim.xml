@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="com.ins.practice.app.animtest.AnimAct">
+
+
+    <TextView
+
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="100dp"
+            android:id="@+id/anim_text"
+            android:text="test1"
+            android:textSize="30sp"
+            android:background="@drawable/bg_anim_list"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+    <Button
+            android:text="开始动画"
+            android:onClick="anim_go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    <Button
+            android:text="取消动画"
+            android:onClick="anim_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+</LinearLayout>

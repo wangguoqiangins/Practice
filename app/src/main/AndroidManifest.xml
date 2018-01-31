@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ins.practice.app" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    //获取设备网络状态，禁用后无法获取网络状态
+    <uses-permission android:name="android.permission.INTERNET" />
+    //网络权限，当禁用后，无法进行检索等相关业务
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    //读取设备硬件信息，统计数据
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    //读取系统信息，包含系统版本等信息，用作统计
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    //获取设备的网络状态，鉴权所需网络代理
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    //允许sd卡写权限，需写入地图数据，禁用后无法显示地图
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    //获取统计数据
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    //鉴权所需该权限获取进程列表
+    <uses-permission android:name="android.permission.CAMERA" />
+    //使用步行AR导航，配置Camera权限
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomTitleTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="8ByCGqi9ZgV8izGTDte4cYGjvbGxwpFC" />
+
+        <activity
+            android:name=".DoorAct"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".baiduditu.MapTest"
+            android:label="@string/title_activity_map_test" >
+        </activity>
+        <activity
+            android:name=".sqlitTest.SqlitAct"
+            android:label="@string/title_activity_sqlit" >
+        </activity>
+
+        <provider
+            android:name=".sqlitTest.NameProvider"
+            android:authorities="com.ins.www.abc"
+            android:exported="true" />
+        <provider
+            android:name=".usersqlittest.UserProvider"
+            android:authorities="com.ins.www.ccc"
+            android:exported="true" />
+        <provider
+            android:name=".studentsqlittest.StudentProvider"
+            android:authorities="com.ins.www.ddd" />
+
+        <activity
+            android:name=".mountListType.MountListTypeAct"
+            android:label="@string/title_activity_mount_list_type" >
+        </activity>
+        <activity
+            android:name=".touchtest.TouchTestAct"
+            android:label="@string/title_activity_touch_test" >
+        </activity>
+        <activity
+            android:name=".videotest.VideoAct"
+            android:label="@string/title_activity_video" >
+        </activity>
+        <activity
+            android:name=".BaseAct"
+            android:label="@string/title_activity_base" >
+        </activity>
+        <activity android:name=".animtest.AnimAct" />
+        <activity android:name=".recycleviewTest.RecycleAct" />
+        <activity android:name=".rectDrawableCanvas.RectDrawableCanvasAct" />
+        <activity android:name=".lianXiRenLiebiao.ContactAct" />
+        <activity android:name=".test.TestAct" />
+        <activity android:name=".x_test.XAct" />
+        <activity android:name=".textColorTest.TextColorAct" />
+        <activity android:name=".java_knowledge.KnowledgeAct" />
+        <activity
+            android:name=".mvc_test.Mvc_Test_1"
+            android:label="@string/title_activity_mvc__test_1" >
+        </activity>
+        <activity android:name=".touchtest.TouchAct"/>
+    </application>
+
+</manifest>

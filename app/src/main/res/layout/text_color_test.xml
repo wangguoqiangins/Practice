@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+
+            android:background="@color/gray"
+            android:textColor="@color/bg_tv_selector"
+            android:id="@+id/text_test_tv_1"
+            android:gravity="center"
+            android:text="测试内容"
+            android:padding="50dp"
+            android:layout_marginBottom="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:padding="50dp"
+            android:background="@color/blue"
+            android:layout_marginBottom="100dp"
+            android:gravity="center"
+            android:id="@+id/text_test_tv_all_text"
+            android:text="哈喽kity_all"
+            android:autoLink="all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:background="@color/green"
+            android:gravity="center"
+            android:id="@+id/text_test_tv_all_web"
+            android:text="http://192.168.0.104/tb.txt"
+            android:autoLink="all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+</LinearLayout>
